@@ -8,7 +8,7 @@ to its clients (browsers). This is best suited for highly
 parallelizeable tasks such as monte-carlo simulations or other
 [embarassingly parallel problems](http://en.wikipedia.org/wiki/Embarrassingly_parallel).
 
-### Usage
+## Usage
 
 #### Install with bundler
 
@@ -30,6 +30,8 @@ Add the line
 - Provide tasks.js files in app/tasks
 - task*.js must define `var nextTask = new Task(main_function_name)`
 - The result of `main_function_name` will be saved in the db
+
+## Notes
 
 ### Verification 
 Already completed tasks will run again on a new machine and the
