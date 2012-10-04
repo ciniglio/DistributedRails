@@ -1,4 +1,4 @@
-# Distribute
+# DistributedRails
 
 ## Distributes tasks to multiple browsers 
 
@@ -7,6 +7,8 @@ plugin for Rails that allows the server to distribute tasks
 to its clients (browsers). This is best suited for highly
 parallelizeable tasks such as monte-carlo simulations or other
 [embarassingly parallel problems](http://en.wikipedia.org/wiki/Embarrassingly_parallel).
+
+Original (read: deprecated) project: ciniglio/distributed
 
 ## Usage
 
