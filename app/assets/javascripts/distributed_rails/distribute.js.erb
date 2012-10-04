@@ -23,7 +23,7 @@ function post_result(result) {
     data["distributed_task_id"] = distributed_task_id;
     $.ajax({
         type: 'POST',
-        url: '<%= task_result_path %>',
+        url: '<%= DistributedRails::Engine.routes.url_helpers.result_path %>',
         data: data,
         success: get_new_task,
     });
@@ -46,7 +46,7 @@ function wait_then_get_new_task(){
 // call url to get new task
 function get_new_task(){
     $.ajax({
-        url: '<%= next_task_path %>',
+        url: '<%= DistributedRails::Engine.routes.url_helpers.task_path %>',
         success: success,
         error: wait_then_get_new_task,
         datatype: "script",

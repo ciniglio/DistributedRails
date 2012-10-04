@@ -1,5 +1,6 @@
 DistributedRails::Engine.routes.draw do
-  get "tasks/next", :as => :next_task
-  post "tasks/result", :as => :task_result
+
+  match 'tasks/next' => 'tasks#next', :as => :task
+  match 'tasks/result' => 'tasks#result', :as => :result
 
 end
