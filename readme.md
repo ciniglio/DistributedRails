@@ -14,8 +14,7 @@ Original (read: deprecated) project: ciniglio/distributed
 
 #### Install with bundler
 
-`gem 'distributed_rails', :git =>
-'git://github.com/ciniglio/distributedrails.git'`
+`gem 'distributed_rails'
 
 #### Then in your routes.rb:
 
