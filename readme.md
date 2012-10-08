@@ -30,7 +30,7 @@ Add the line
 #### Now we're ready to get cooking!
 
 - Provide tasks.js files in app/tasks
-- task*.js must define `var nextTask = new Task(main_function_name)`
+- task*.js must define `var nextTask = main_function_name`
 - The result of `main_function_name` will be saved in the db
 
 ## Notes
